@@ -16,5 +16,9 @@ steps {
 bat 'mvn install'
 }
 }
+  stage ('deploying stage'){
+    steps{
+     bat 'mvn deploy'
+    }
 }
 } 
